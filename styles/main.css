@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Montserrat+Alternates&display=swap");
+
+:root {
+  /* Paleta generada con Coolors.co */
+  --imperial-red: #e63946;
+  --honeydew: #f1faee;
+  --powder-blue: #a8dadc;
+  --celadon-blue: #457b9d;
+  --prussian-blue: #1d3557;
+}
+
+/* ----------------- */
+/* Normalizado */
+html *:not(dl,dd,dt,ul,ol,li) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------- */
+/* Estilos generales del sitio */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--celadon-blue);
+  height: 15vh;
+  font-family: "Merienda", cursive;
+}
+
+h1 {
+  transform: rotate(-5deg);
+  font-size: 2.5rem;
+}
+
+#logo {
+  height: 8vh;
+  margin-left: 2rem;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  width: 100vw;
+  background-color: var(--honeydew);
+  padding: 1.5rem 0;
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--prussian-blue);
+  color: var(--honeydew);
+}
+
+.btn {
+  background-color: var(--imperial-red);
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--honeydew);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 0.25rem;
+}
+.btn:hover {
+  background-color: hsl(355, 78%, 36%);
+}
+
+/* ----------------- */
+/* Estilos de index */
+.panqueques {
+  background-image: url(../assets/panqueques-con-dulce-de-leche.jpg);
+}
+.copa {
+  background-image: url(../assets/copa-oh-la-la.jpg);
+}
+.suprema {
+  background-image: url(../assets/suprema-rellena-con-ensalada.jpg);
+}
+
+.portada {
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  transition: flex-grow 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.portada > h2 {
+  background-color: hsla(182, 43%, 76%, 0.822);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+
+.portada:hover {
+  flex-grow: 5;
+}
+
+
+/* ----------------- */
+/* Estilo de detalle de receta */
+.receta{
+  padding: 0%;
+  flex-direction: column;
+}
+
+.receta .hero-suprema{  
+  background: url("../assets/suprema-rellena-con-ensalada.jpg") center center ;
+}
+.receta .hero-panqueques{
+  background: url("../assets/panqueques-con-dulce-de-leche.jpg") center bottom;
+}
+.receta .hero-copa{
+  background: url("../assets/copa-oh-la-la.jpg") center 30%;
+}
+
+.receta .hero{
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+.hero h2{
+  align-self: flex-end;
+  margin: 0 4rem .5rem 0;
+  padding: .25rem 1rem;
+  font-size: 4rem;
+  text-shadow: 0 0 5px #e63946, 0 0 8px #f1faee ;
+  background-color: #f1faeeb2;
+}
+
+.instrucciones{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  min-height: 50vh;
+}
+
+.instrucciones article{
+  max-width: 50ch;
+}
+
+.mas-recetas{
+  padding: 1rem;
+  background-color: var(--powder-blue);
+}
+
+
+.mas-recetas h3{
+  text-decoration: underline;
+  margin-left: 2rem;
+}
+.mas-recetas h4{
+  margin: 1.5rem 0 0 0 ;
+}
+
+.mas-recetas img{
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
+.mas-recetas .row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mas-recetas article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
