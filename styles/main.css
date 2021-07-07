@@ -126,13 +126,13 @@ footer {
   background: url("../assets/panqueques-con-dulce-de-leche.jpg") center bottom;
 }
 .receta .hero-copa {
-  background: url("../assets/copa-oh-la-la.jpg") center 30%;
+  background: url("../assets/copa-oh-la-la.jpg") center 25%;
 }
 
 .receta .hero {
   background-size: cover;
   width: 100%;
-  height: 40vh;
+  height: 25vh;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -153,7 +153,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding-top: 1rem;
-  min-height: 50vh;
+  min-height: 70vh;
 }
 
 .instrucciones article {
@@ -191,3 +191,7 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+
+/* PRUEBAS EN CLASE */
+
